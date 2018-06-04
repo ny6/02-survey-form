@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is form information</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <div class="left">
+          <label id="name-label" for="name">Name</label>
+        </div>
+        <div class="right">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="left">
+          <label id="email-label" for="email">Email</label>
+        </div>
+        <div class="right">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="left">
+          <label id="number-label" for="number">Number</label>
+        </div>
+        <div class="right">
+          <input type="number" id="number" name="number" min="0" max="20" placeholder="Number" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="left">
+          <label for="dropdown">Gender</label>
+        </div>
+        <div class="right">
+          <select name="dropdown" id="dropdown">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="left">
+          <label for="">Status</label>
+        </div>
+        <div class="right">
+          <input type="radio" name="grouped" id="married" value="married">
+          <label for="married">Married</label><br>
+          <input type="radio" name="grouped" id="single" value="single">
+          <label for="single">Single</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="left">
+          <label for="">Places Visited</label>
+        </div>
+        <div class="right">
+          <input type="checkbox" name="checkboxes" id="us" value="us">
+          <label for="us">United States</label><br>
+          <input type="checkbox" name="checkboxes" id="in" value="in">
+          <label for="in">India</label><br>
+          <input type="checkbox" name="checkboxes" id="ca" value="ca">
+          <label for="ca">Canada</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="left">
+          <label for="comments">Your comments</label>
+        </div>
+        <div class="right">
+          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

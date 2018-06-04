@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 120%;
+}
+
+.form-group {
+  max-width: 100%;
+  margin: 10px;
+}
+
+.left, .right {
+  display: inline-block;
+}
+
+.left {
+  text-align: right;
+  width: 30%;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.right {
+  width: 40%;
+  text-align: left;
+}
+
+input[type=text], input[type=email], input[type=number], textarea, select {
+  padding: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: #41AAE6;
+  border-color: #41AAE6;
+  color: #fff;
+  font-weight: bold;
+}
